@@ -1,0 +1,25 @@
+extends ./includes/layout.jade
+
+block content
+    div#create-article
+        p#header 文章标题      
+
+        script(type= 'text/javascript', src= '/lib/ueditor1_4_3-utf8-php/ueditor.config.js')      
+
+        script(type= 'text/javascript', src= '/lib/ueditor1_4_3-utf8-php/ueditor.all.js')      
+
+        script(type= 'text/javascript' src= '/lib/ueditor1_4_3-utf8-php/ueEditor.js')      
+
+        link(rel="stylesheet", href="/stylesheets/style.css")      
+
+        form#create-new-article(method = 'POST', action= '/article/create')
+            scirpt#container(name= 'content', type= 'text/plain')
+            | type:
+            input(type= "text", name= "type")
+            br
+            | label:
+            input(type= "text", name= "label")
+            br
+            button#submit.btn.btn-success(type = 'submit') 发表
+            button.btn(type = 'button', onclick = "location.href= './'")取消
+  

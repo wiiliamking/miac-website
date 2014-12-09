@@ -1,0 +1,40 @@
+- var n = 0
+link(type= 'text/css', rel= 'stylesheet', href= './my css/share.css')
+div#share
+    h1#header SHARE
+    div#search-share
+        form(action= "./search", method= "POST")
+            input#share-keyword(type= "text", name= "word", value= "search share")
+            button(type= "submit") Search
+    div#main-share
+        div#show-share
+            form#edit(action= "./submit", method= "POST")
+                input(type= "text", name= "content", value= "I want to share.......")
+                br
+                input(type= "file", value= "file")
+                button(type= "submit") submit
+            div#others-share
+                while n++ < 3
+                    div.one-share
+                        img.user-photo
+                        div.share-content
+                            p hehe
+                            addfile: xxxx
+        div#share-label
+           input(type= 'checkbox')
+           | Javascipt
+           hr
+           input(type= 'checkbox')
+           | CSS
+           hr
+           input(type= 'checkbox')
+           | PHP
+           hr
+           input(type= 'checkbox')
+           | Python
+           hr
+           input(type= 'checkbox')
+           | Linux
+           hr
+           input(type= 'checkbox')
+           | Windows
