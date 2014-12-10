@@ -39,7 +39,7 @@ router.get '/:id', (req, res)->
                                 comment.replys = replys
                                 callback()
                     , (err)->
-                        res.render 'childArticle', { article: article, comments: comments }
+                        res.render 'childArticle', { article: article, comments: comments, name: 'childArticle' }
 
 router.post '/create', (req, res)->
     { category, title, content } = req.body

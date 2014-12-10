@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA,aAAa;EAHT,WAAW,EADO,GAAG;EAErB,YAAY,EAFM,GAAG",
+"sources": ["../../src/sass/childArticle.sass"],
+"names": [],
+"file": "childArticle.css"
+}
