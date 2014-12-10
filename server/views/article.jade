@@ -7,8 +7,7 @@ block content
             form#search(action= "./search")
                 input#search-word(type= "text", name= "words", onblur= "this.value= '搜索文章'", onFocus= "this.value= ''", value= "search articles")
                 button(type= "submit") Search
-            if user
-                button(type= "button", onclick= "window.open('./article/create')") 发表文章
+                button.submit(type= "button", onclick= "window.open('./article/create')") 发表文章
         div#main
             div
                 div#list
@@ -17,10 +16,9 @@ block content
                             each article in articles
                                 div.one-article
                                     img#user-image
-                                    p 文章标题
-                                    p#article-time XXX 于 ...... 发表了新文章
-                    div#more
-                        button(type= "button") more *
+                                    p#title #{article.title}
+                                    p#article-time #{article.createdBy} 于#{moment(article.cratedAt).format('MMM D.YY')}发表了新文章
+                                    a#link(href= '/article/' + article._id) 详细内容......
                 div#choose
                     div#menu 分类目录
                         div
@@ -41,7 +39,8 @@ block content
                         div
                             input.checkblock(type= 'checkbox', name= 'talk' value= '吐槽')
                             | 吐槽
-                    div#label 标签
+                    div#label
+                        p 标签
                         ul
                             li
                                 a(href= "./?label='javasript'") javascript
@@ -60,4 +59,6 @@ block content
                             hr
                             li
                                 a(href= "./?label='Dream'") Dream
+                div#more
+                    button(type= "button") more *
 

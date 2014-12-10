@@ -1,16 +1,7 @@
-<<<<<<< HEAD
-p#title=  title
+extends ./includes/layout.jade
 
-div#contents= contents
-=======
-doctype html
-html
-    head
-        title article
-        script(src='../lib/jquery.js')
-    body
-        p article
-        include ./includes/header.jade
+block content
+    div#childArticle
         p category:
             span=article.category
         p title:

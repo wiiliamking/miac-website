@@ -2,7 +2,7 @@ extends ./includes/layout.jade
 
 block content
     div#create-article
-        p#header 文章标题      
+        p#header 发表新文章
 
         script(type= 'text/javascript', src= '/lib/ueditor1_4_3-utf8-php/ueditor.config.js')      
 
@@ -12,14 +12,15 @@ block content
 
         link(rel="stylesheet", href="/stylesheets/style.css")      
 
-        form#create-new-article(method = 'POST', action= '/article/create')
+        form#create-new-article(method= 'POST', action= '/article/create')
+            | 标题：
+            input#title(type=- "submit" name= 'title' placeholder= '请键入标题')
             scirpt#container(name= 'content', type= 'text/plain')
-            | type:
-            input(type= "text", name= "type")
+            | 类别：
+            input(type= "text", name= "category")
             br
-            | label:
+            | 标签：
             input(type= "text", name= "label")
             br
-            button#submit.btn.btn-success(type = 'submit') 发表
-            button.btn(type = 'button', onclick = "location.href= './'")取消
-  
+            button.submit(type = 'submit') 发表
+            button.cancel(type = 'button', onclick = "location.href= './'")取消

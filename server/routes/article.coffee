@@ -16,10 +16,10 @@ router.get '/', (req, res)->
         if err
             return res.status(500).send 'Server Error.'
         else
-            res.render 'article', articles: articles
+            res.render 'article', articles: articles, name: 'article'
 
-router.get '/create', requireLogin, (req, res)->
-    res.render 'createArticle'
+router.get '/create', (req, res)->
+    res.render 'createArticle', name: 'createArticle'
 
 router.get '/:id', (req, res)->
     id = mongoose.Types.ObjectId(req.params.id)
