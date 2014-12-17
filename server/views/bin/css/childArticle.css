@@ -1,5 +1,8 @@
 #childArticle {
   margin-left: 20%;
-  margin-right: 20%; }
-
-/*# sourceMappingURL=childArticle.css.map */
+  margin-right: 20%;
+  background-color: white; }
+  #childArticle #container #content header {
+    font-size: 40pt;
+    text-align: center;
+    color: #00a0e6; }

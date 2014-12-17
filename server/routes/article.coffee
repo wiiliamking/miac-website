@@ -29,7 +29,7 @@ router.get '/:id', (req, res)->
         else
             MessageModel.find { replyTo: id , type: 'comment'}, (err, comments)->
                 if not comments
-                    res.render 'childArticle', article: article
+                    res.render 'childArticle', article: article, name: 'childArticle'
                 else
                     async.each comments, (comment, callback)->
                         MessageModel.find {replyTo: comment._id, type: 'reply'}, (err, replys)->
