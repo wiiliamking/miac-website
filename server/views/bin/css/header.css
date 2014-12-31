@@ -1,0 +1,27 @@
+#navigator {
+  background-color: #1b1b1b;
+  overflow: hidden; }
+  #navigator div {
+    display: inline-block; }
+  #navigator .link {
+    text-align: center;
+    color: #fefefe;
+    margin-right: 15px;
+    font-size: 10pt; }
+    #navigator .link a {
+      color: #fefefe;
+      text-decoration: none; }
+    #navigator .link span {
+      font-size: 30pt; }
+  #navigator #user-poccess {
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+    #navigator #user-poccess .button {
+      padding: 5px 5px 5px 5px;
+      font-size: 20pt;
+      border: white solid 2px;
+      margin-left: 15px;
+      border-radius: 15%; }
+      #navigator #user-poccess .button span a {
+        color: #fefefe; }

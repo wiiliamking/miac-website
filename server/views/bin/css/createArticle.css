@@ -1,5 +1,5 @@
 #create-article {
-  background-color: #F1EFF0;
+  background-color: #f1eff0;
   margin-left: 20%;
   margin-right: 20%; }
   #create-article * {
@@ -26,8 +26,6 @@
     #create-article #create-new-article #container * {
       margin: 0; }
     #create-article #create-new-article .submit {
-      background-color: #31AAFD; }
+      background-color: #31aafd; }
     #create-article #create-new-article .cancel {
       background-color: #484848; }
-
-/*# sourceMappingURL=createArticle.css.map */
