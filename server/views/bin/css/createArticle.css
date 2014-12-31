@@ -5,13 +5,13 @@
   #create-article * {
     margin: 0 auto; }
   #create-article p {
-    margin-left: 20%;
+    margin-left: 5%;
     margin-right: 20%; }
   #create-article #header {
     color: grey;
     font-size: 40pt; }
   #create-article #create-new-article {
-    margin-left: 20%;
+    margin-left: 5%;
     margin-right: 20%; }
     #create-article #create-new-article button {
       color: white;
