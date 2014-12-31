@@ -12,4 +12,10 @@
     });
   });
 
+  $('.link').mouseover(function(event) {
+    var target;
+    target = $(event.currentTarget);
+    return $('.triangle').css("left", (target.attr("data-num") * 95 + 30) + "px");
+  });
+
 }).call(this);

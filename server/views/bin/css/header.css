@@ -1,15 +1,15 @@
 #navigator {
-  background-color: #1b1b1b;
+  background-color: #1B1B1B;
   overflow: hidden; }
   #navigator div {
     display: inline-block; }
   #navigator .link {
     text-align: center;
-    color: #fefefe;
+    color: #FEFEFE;
     margin-right: 15px;
     font-size: 10pt; }
     #navigator .link a {
-      color: #fefefe;
+      color: #FEFEFE;
       text-decoration: none; }
     #navigator .link span {
       font-size: 30pt; }
@@ -24,4 +24,22 @@
       margin-left: 15px;
       border-radius: 15%; }
       #navigator #user-poccess .button span a {
-        color: #fefefe; }
+        color: #FEFEFE; }
+  #navigator .triangle {
+    position: absolute;
+    top: 64px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-bottom-color: blue;
+    -webkit-transition: left 0.7s; }
+  #navigator #divided-line {
+    margin-top: 10px;
+    display: block;
+    height: 5px;
+    background-color: blue; }
+
+/*# sourceMappingURL=header.css.map */

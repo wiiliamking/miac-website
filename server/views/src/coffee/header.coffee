@@ -11,3 +11,7 @@ $('#logout').click ->
             alert data.result + '\n' + (data.msg if data.msg)
             if data.result is 'success'
                 $(location).attr 'href', '/'
+
+$('.link').mouseover (event)->
+    target = $(event.currentTarget)
+    $('.triangle').css("left", (target.attr("data-num") * 95 + 30) + "px")
