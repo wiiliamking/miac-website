@@ -1,14 +1,48 @@
-a(href='/') 主页
-a(href='/article') 文章
-a(href='/share') 分享
-a(href='/discuss') 讨论
-a(href='/album') 相册
-a(href='/works') 作品
-a(href='/about') 关于
-if (user)
-    a(id='logout') 登出
-else
-    a(href='/log') 登录
-    a(href='/register') 注册
-
-script(src='../bin/js/header.js')
+div#navigator
+    div.link
+        span
+            a(href="./")主页
+        br
+        | HOME
+    div.link
+        span 
+            a(href="./article")文章
+        br
+        | ARTICLE
+    div.link
+        span
+            a(href="./share")分享
+        br
+        | SHARE    
+    div.link
+        span
+            a(href="./discuss") 讨论
+        br
+        | DISSCUSS    
+    div.link
+        span
+            a(href="./album") 相册
+        br
+        | ALBUM    
+    div.link
+        span
+            a(href="./work") 作品
+        br
+        | WORKS
+    div.link
+        span
+            a(href="./about") 关于
+        br
+        | ABOUT
+    div#user-poccess
+        if (user)
+            div.button
+                span
+                    a(href="./logout") 登出
+        else
+            div.button
+                span.login
+                    a(href="./login") 登录
+            div.button
+                span.register
+                    a(href="./register") 注册
