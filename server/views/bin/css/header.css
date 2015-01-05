@@ -13,6 +13,14 @@
       text-decoration: none; }
     #navigator .link span {
       font-size: 30pt; }
+  #navigator .light {
+    color: #009FE9; }
+    #navigator .light a {
+      color: #009FE9; }
+  #navigator .dark {
+    color: #FEFEFE; }
+    #navigator .dark a {
+      color: #FEFEFE; }
   #navigator #user-poccess {
     position: absolute;
     right: 10px;
@@ -34,12 +42,12 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid #fff;
-    border-bottom-color: blue;
+    border-bottom-color: #009FE9;
     -webkit-transition: left 0.7s; }
   #navigator #divided-line {
     margin-top: 10px;
     display: block;
     height: 5px;
-    background-color: blue; }
+    background-color: #009FE9; }
 
 /*# sourceMappingURL=header.css.map */

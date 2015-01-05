@@ -1,30 +1,30 @@
-x#about #main-information div {
+#about #main-information div {
   margin-top: 15px;
   margin-left: 20%;
   margin-right: 20%;
   background-color: #F1EFF0;
   color: #818181; }
-  x#about #main-information div header {
+  #about #main-information div header {
     font-size: 28pt; }
-  x#about #main-information div p {
+  #about #main-information div p {
     font-size: 14pt; }
-x#about #more {
+#about #more {
   overflow: hidden;
   background-color: #1B1B1B; }
-  x#about #more header {
+  #about #more header {
     font-size: 40pt;
     color: #009FE9; }
-  x#about #more p {
+  #about #more p {
     font-size: 20pt;
     color: white; }
-  x#about #more #container {
+  #about #more #container {
     margin: 5% 20% 5% 20%;
     overflow: hidden; }
-    x#about #more #container #thanks {
+    #about #more #container #thanks {
       display: inline-block; }
-    x#about #more #container #contact-and-donate {
+    #about #more #container #contact-and-donate {
       float: right; }
-      x#about #more #container #contact-and-donate #donate {
+      #about #more #container #contact-and-donate #donate {
         border: #009FE9 solid 2px;
         font-size: 37pt;
         color: #009FE9;
