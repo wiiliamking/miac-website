@@ -52,3 +52,4 @@ $('.link').mouseover (event)->
     target = $ event.currentTarget
     arrow_move target.attr "data-num"
  
+$('#links').mouseout init

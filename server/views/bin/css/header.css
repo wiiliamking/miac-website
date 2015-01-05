@@ -33,6 +33,10 @@
       border-radius: 15%; }
       #navigator #user-poccess .button span a {
         color: #FEFEFE; }
+    #navigator #user-poccess .button:hover {
+      border-color: #009FE9; }
+      #navigator #user-poccess .button:hover span a {
+        color: #009FE9; }
   #navigator .triangle {
     position: absolute;
     top: 64px;

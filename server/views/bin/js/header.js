@@ -28,7 +28,6 @@
     _results = [];
     for (_i = 0, _len = _ref.length; _i < _len; _i++) {
       index = _ref[_i];
-      console.log("heh");
       if (index === $('.link')[now_arrow]) {
         $(index).removeClass("dark");
         _results.push($(index).addClass("light"));
@@ -66,5 +65,7 @@
     target = $(event.currentTarget);
     return arrow_move(target.attr("data-num"));
   });
+
+  $('#links').mouseout(init);
 
 }).call(this);
