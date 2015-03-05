@@ -6,10 +6,8 @@ var discuss = {
   up: 10, // int
   down: 2, // int
   viewsCount: 100, // int
-  createdBy: {
-    _id: "user-id-1", // ObjectID
-    username: "Laiy" // string
-  },
+  createdBy: "user-id-1", // ObjectID
   createdAt: "2014-8-21", // Date
-  discussCount: 100 // int
+  votedUsers: ["user-id-1"], // ObjectID
+  answerTo: "discuss-id-1" // ObjectID
 };

@@ -24,13 +24,13 @@ router.get '/', (req , res)->
         if err
             return res.status(500).send 'Server Error.'
         else
-            res.render 'album', albums: albums
+            res.render 'album', albums: albums, name: 'album'
 
 ###
 * render 'createAlbum' when get '/album/createAlbum'
 ###
 router.get '/createAlbum', requireLogin, (req, res)->
-    res.render 'createAlbum'
+    res.render 'createAlbum', name: 'createAlbum'
 
 ###
 * render 'childAlbum' when get '/album/:id'
@@ -48,7 +48,7 @@ router.get '/:id', (req, res)->
         else
             MessageModel.find { replyTo: id , type: 'comment'}, (err, comments)->
                 if not comments
-                    res.render 'childAlbum', album: album
+                    res.render 'childAlbum', album: album, name: 'childAlbum'
                 else
                     async.each comments, (comment, callback)->
                         MessageModel.find { replyTo: comment._id, type: 'reply' }, (err, replys)->
@@ -58,7 +58,7 @@ router.get '/:id', (req, res)->
                                 comment.replys = replys
                                 callback()
                     , (err)->
-                        res.render 'childAlbum', { album: album, comments: comments }
+                        res.render 'childAlbum', { album: album, comments: comments, name: 'childAlbum' }
 
 ###
 * handle when post '/album/createAlbum'
@@ -71,7 +71,9 @@ router.get '/:id', (req, res)->
 * @param title: album's title
 ###
 router.post '/createAlbum', requireLogin, (req, res)->
-    if not req.files.cover
+    cover = req.files.cover
+    console.log req.files.cover
+    if not cover
         return res.status(500).send 'Server Error.'
     else
         { title } = req.body
